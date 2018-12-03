@@ -3,6 +3,19 @@ section
 	z-index: 105
 	display: none
 	height: 570px
+
+	+breakpoint($desktop-med)
+		height: 540px
+
+	+breakpoint($tablet-2)
+		height: 530px
+
+	+breakpoint($smartphone-landscape-s)
+		height: 610px
+
+	
+
+
 	
 	.ultraflex
 		+flexbox
@@ -16,6 +29,18 @@ section
 		height: 520px
 		padding: 10px
 		border-radius: 12px
+
+		+breakpoint($desktop-med)
+			width: 500px
+			height: 480px
+
+		+breakpoint($tablet-2)
+			margin-top: 5px
+
+		+breakpoint($smartphone-landscape-s)
+			width: 70%
+			height: auto
+
 	
 
 		p 
@@ -23,6 +48,9 @@ section
 			color: $branco
 			font-size: 23px
 			position: relative
+
+			+breakpoint($desktop-med)
+				font-size: 20px
 
 		form
 			+flexbox 
@@ -41,6 +69,9 @@ section
 					color: $preto-italico
 					+transition(.5s)
 					outline: none
+
+					+breakpoint($desktop-med)
+						height: 30px
 
 					&:hover
 						border: 2px solid $laranja
@@ -64,6 +95,9 @@ section
 				+transition(.5s)
 				margin-top: 15px
 				position: relative
+
+				+breakpoint($desktop-med)
+					height: 30px
 
 				&:hover
 					background: $laranja
