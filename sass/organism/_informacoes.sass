@@ -1,100 +1,76 @@
 @import molecules/mixins
-
-.slogan
-  order: 2
-  position: absolute
-  z-index: 102
-  width: 28%
-  +flexbox
-  justify-content: center
-  align-items: center
-  margin-left: 320px
-  margin-top: 330px
-  h1
-    font-size: 30px
-    text-align: center
-    color: $branco
-    font-family: Hero
-    text-transform: uppercase
-
-
 section
-  z-index: 103
-  position: absolute
-  +flexbox
-  justify-content: center
-  order: 3
+	z-index: 105
+	display: none
+	height: 570px
+	
+	.ultraflex
+		+flexbox
+		justify-content: center
+		position: relative
 
 
+	.info 
+		background: rgba(91,91,91,0.5)
+		width: 706px
+		height: 520px
+		padding: 10px
+		border-radius: 12px
+	
 
-  .info
-    background: rgba(112,112,112,0.7)
-    +flexbox
-    flex-direction: column
-    width: 710px
-    border-radius: 5px
-    padding: 5px
-    height: 570px
-    margin-top: 420px
-    margin-left: 180px
+		p 
+			text-align: center
+			color: $branco
+			font-size: 23px
+			position: relative
 
-    p 
-      font-family: Open Sans
-      color: $branco
-      font-size: 25px
-      text-align: center
+		form
+			+flexbox 
+			flex-direction: column
+			position: relative
 
-    form
-      +flexbox
-      flex-direction: column
+			label
 
-      label
-        margin-top: -5px
+				input
+					width: 100%
+					height: 41px
+					border: 2px solid $preto-italico
+					border-radius: 12px
+					padding: 5px
+					+placeholder($preto-italico)
+					color: $preto-italico
+					+transition(.5s)
+					outline: none
 
+					&:hover
+						border: 2px solid $laranja
 
-        input
-          width: 100%
-          height: 41px
-          border-radius: 12px
-          padding: 5px
-          font-family: Open Sans
-          color: $preto-italico
-          font-size: 20px
-          border: 4px solid $preto-italico
-          outline: none
-          +transition(.5s)
-          +placeholder($preto-italico)
-          margin-top: 6px
-          &:hover
-            border: 4px solid $laranja
+					&:focus
+						border: 2px solid $laranja
+						outline: none
 
-          &:focus
-            border: 4px solid $laranja
-            outline: none
+			button
+				width: 100%
+				height: 41px
+				border: none
+				cursor: pointer
+				background: $preto-italico
+				color: $branco
+				font-size: Hero
+				text-transform: uppercase
+				outline: none
+				border-radius: 12px
+				font-size: 20px
+				+transition(.5s)
+				margin-top: 15px
+				position: relative
 
-      button
-        width: 100%
-        height: 41px 
-        border-radius: 12px
-        background: $preto-italico
-        outline: none
-        font-family: Hero
-        text-transform: uppercase
-        outline: none
-        border: none
-        color: $branco
-        font-size: 20px
-        cursor: pointer
-        margin-top: 15px
-        +transition(.5s)
+				&:hover
+					background: $laranja
 
-        &:hover
-          background: $laranja
-
-        &:focus
-          background: $laranja
+				&:focus
+					background: $laranja
+					outline: none
 
 
-
- 
 
