@@ -1,0 +1,42 @@
+/*Arquivos de estilos da pagina inicial, feito utilizando o conceito de design atomico*/ 
+/*Utilizar o gulp para a compilaçao destes estilos no codigo css*/
+/*Este arquivo é utilizado apenas para importar os estilos que estão localizados nas pastas por meio da estrutura de design atomico*/                                                
+
+/*======== Mixins e Frameworks Externos ========*/
+
+/*Variaveis e mixins da pagina*/
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins.scss
+@import ../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables.scss
+
+/*Breakpoint*/
+@import ../bower_components/breakpoint-sass/stylesheets/breakpoint.scss
+
+/*Mixin do flexbox*/
+@import ../bower_components/sass-flex-mixin/flex
+
+/*======== Arquivos de Estilização Interna ========*/
+
+/*======== Atomos ========*/
+@import atoms/bg
+@import atoms/logo
+
+
+/*======== Moleculas ========*/
+
+/*Estrutura base da pagina*/
+@import molecules/reset
+/*Arquivos de mixins*/
+@import molecules/mixins
+
+/*======== Organismos ========*/
+@import organism/informacoes
+@import organism/footer
+
+
+/*======== Templates ========*/
+@import templates/page
+
+/*Estrutura base da pagina*/
+
+
+/*A junção destes arquivos constituem esta page(pagina) que forma toda a estilização site compilada no css*/

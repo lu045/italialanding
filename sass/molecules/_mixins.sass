@@ -1,0 +1,69 @@
+/*Arquivo dos mixins utilizados nos estilos das paginas*/
+/* ======== Cores ========*/
+/*Gerais*/
+$vermelho: #ED212D
+$vermelho-vinho: #D31D28
+$verde: #007F36
+$verde-claro: #2C9459
+$laranja: #F27123
+$laranja-claro: #FF7725
+$preto: #000
+$preto-italico: #323032
+$preto-claro: #3F3C3F
+$branco: #fff
+$cinza: #7E797E
+
+/*Media Queries*/
+/*========Resolução======== */
+$smartv: max-width 2560px
+$desktop-wide: max-width 1440px
+$ipad-pro: max-width 1336px
+$desktop: max-width 1280px
+$desktop2: max-width 1237px
+$desktop-med: max-width 1199px
+$tablet-landscape: max-width 1024px
+$tablet-2: max-width 991px
+$tablet: max-width 960px
+$tbs: max-width 900px
+$smartphone-landscape-4: max-width 800px
+$smartphone-landscape-3: max-width 767px
+$smartphone-landscape-sm: max-width 750px
+$smartphone-landscape-s: max-width 710px
+$smartphone-landscape-2ms: max-width 658px
+$smartphone-landscape-2: max-width 640px
+$smartphone-landscape-p: max-width 627px
+$smartphone-landscape-s2m: max-width 582px
+$smartphone-landscape-s2: max-width 580px
+$smartphone-landscape-s: max-width 575px
+$smartphone-landscape-msg2: max-width 529px
+$smartphone-landscape-msa2: max-width 522px
+$smartphone-landscape-msa: max-width 515px
+$smartphone-landscape-msg: max-width 503px
+$smartphone-landscape-1: max-width 480px
+$smartphone-landscape-ms: max-width 449px
+$smartphone-l: max-width 425px
+$smartphone-l2a: max-width 413px
+$smartphone-l2: max-width 408px
+$smartphone-m2: max-width 380px
+$smartphone-m: max-width 375px
+$smartphone-m14: max-width 369px
+$smartphone-m145: max-width 364px
+$smartphone-mas: max-width 349px
+$smartphone-s2: max-width 328px
+$smartphone-s: max-width 320px
+$smartphone-none: max-width 300px
+
+/*========Flexbox========*/
+=flexbox
+  display: -webkit-box
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flexbox
+  display: flex
+
+/*========Colunas========*/
+=columns($count: 3, $gap: 10) 
+  @include css3-prefix('column-count', $count)
+  @include css3-prefix('column-gap', $gap)
+
+
