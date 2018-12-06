@@ -1,84 +1,63 @@
 @import molecules/mixins
 footer
 	background: $preto-italico
-	position: absolute !important
+	position: absolute 
 	padding: 15px
-	width: 100%
-
-
+	width: 100% !important
 
 	.credit
+		+flexbox 
+		flex-direction: column
 
-		.real
-			+flexbox
+		.real 
+			+flexbox 
 			justify-content: center
 
-			h2
+			h2 
 				font-family: Open Sans
-				font-size: 30px
+				text-transform: uppercase
 				color: $branco
-				text-transform: uppercase 
+				font-size: 25px
 
 		.assinatura
-			+flexbox
+			+flexbox 
 			justify-content: center
-
+			
 			img
-				width: 368px
-				height: 159px
-				position: relative
+				width: 249px
+				height: 108px
 
 		.creci
 			+flexbox 
 			justify-content: center
-			margin-top: 10px
+			margin-top: 8px
 
 			p 
 				font-family: Open Sans
-				font-size: 20px
 				text-transform: uppercase
+				font-size: 15px
 				color: $branco
+				text-align: center
 
-	.contato
+	.incorporacao
 
-		.celular
-			+flexbox
-			justify-content: center
+		p
+			font-family: Open Sans
+			color: $branco 
+			font-size: 15px
+			text-align: justify
 
-			img
-				width: 35px
-				height: 35px
 
-			p 
-				font-family: Open Sans
-				font-size: 25px
-				color: $branco
-				margin-left: 15px
-				margin-top: -5px
+	.copyright
 
-		.telefone
-			+flexbox
-			justify-content: center
+		p
+			font-family: Open Sans
+			color: $branco 
+			font-size: 15px
+			text-align: center
 
-			img
-				width: 35px
-				height: 35px
+	
 
-			p 
-				font-family: Open Sans
-				font-size: 25px
-				color: $branco
-				margin-left: 15px
-				margin-top: -3px
-
-		.e-mail
-			+flexbox 
-			justify-content: center 
-
-			p
-				font-family: Open Sans
-				font-size: 25px
-				color: $branco 
 
 
 
