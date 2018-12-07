@@ -1,0 +1,54 @@
+@import molecules/mixins
+
+@import molecules/mixins
+
+.infopage
+	position: relative
+	width: 100%
+
+
+.quadcom
+	position: absolute
+	z-index: 101
+	//background: $laranja
+	width: 100%
+	margin-top: 15px !important
+
+
+	.assinatura
+		//background: $verde
+		+flexbox
+		justify-content: center
+		position: relative
+
+
+		.logo
+			background: $branco
+			width: 272px - 120
+			height: 300px - 115
+			border-radius: 12px
+			+flexbox
+			justify-content: center
+			align-items: center
+
+
+
+			img
+				width: 239px - 115
+				height: 286px - 115
+				position: relative
+
+
+		.slogan
+			width: 50%
+			margin-left: 20px !important
+			margin-top: 35px !important
+
+			h1
+				font-family: Hero
+				font-size: 43px
+				text-transform: uppercase
+				color: $branco
+
+
+
