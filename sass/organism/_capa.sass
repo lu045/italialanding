@@ -2,6 +2,7 @@
 
 @import molecules/mixins
 
+//========Itens da Resolução Normal========//
 .infopage
 	position: relative
 	width: 100%
@@ -10,13 +11,12 @@
 .quadcom
 	position: absolute
 	z-index: 101
-	//background: $laranja
 	width: 100%
 	margin-top: 15px !important
 
 
 	.assinatura
-		//background: $verde
+
 		+flexbox
 		justify-content: center
 		position: relative
@@ -44,11 +44,133 @@
 			margin-left: 20px !important
 			margin-top: 35px !important
 
+			
+
 			h1
 				font-family: Hero
 				font-size: 43px
 				text-transform: uppercase
 				color: $branco
+
+				+breakpoint($desktop4)
+					font-size: 40px
+
+//========Itens da Resolução Responsiva========//
+
+.quadcom-resp1
+	position: absolute
+	z-index: 101
+	width: 100%
+	margin-top: 15px !important
+
+	+breakpoint($smartphone-landscape-3a)
+		position: relative
+		padding: 10px !important
+
+
+	.assinatura-resp1
+
+		+flexbox
+		justify-content: center
+		position: relative
+		flex-direction: column
+		align-items: center
+
+
+		.logo-resp1
+			background: $branco
+			width: 272px - 75
+			height: 300px - 68
+			border-radius: 12px
+			+flexbox
+			justify-content: center
+			align-items: center
+
+			+breakpoint($tablet-landscape2)
+				width: 162px 
+				height: 196px 
+
+			+breakpoint($tbs2)
+				width: 122px
+				height: 166px
+
+	
+
+			img
+				width: 239px - 70
+				height: 286px - 70
+				position: relative
+
+				+breakpoint($tablet-landscape2)
+					width: 129px
+					height: 186px
+
+				+breakpoint($tbs2)
+					width: 99px
+					height: 156px
+
+
+
+
+		.slogan-resp1
+			width: 40%
+			margin-left: 20px !important
+			margin-top: 20px !important
+
+			+breakpoint($tablet-landscape2)
+				width: 35%
+			+breakpoint($tablet-3)
+				width: 38%
+			+breakpoint($tbs2)
+				width: 38%
+
+			+breakpoint($smartphone-landscape-3a)
+				width: 42%
+
+			+breakpoint($smartphone-landscape-s2s)
+				width: 45%
+
+			+breakpoint($smartphone-landscape-2ms3)
+				width: 51%
+
+			+breakpoint($smartphone-landscape-sa2)
+				width: 58%
+
+			+breakpoint($smartphone-landscape-msg2a)
+				width: 66%
+
+			+breakpoint($smartphone-landscape-ms2)
+				width: 73%
+
+			+breakpoint($smartphone-l2l)
+				width: 80%
+
+			+breakpoint($smartphone-mas2)
+				width: 78%
+
+			+breakpoint($smartphone-mas15)
+				width: 85%
+
+
+			h1
+				font-family: Hero
+				font-size: 35px
+				text-transform: uppercase
+				color: $branco
+				text-align: center
+
+				+breakpoint($tablet-landscape2)
+					font-size: 28px
+
+				+breakpoint($tbs2)
+					font-size: 25px
+
+				+breakpoint($smartphone-landscape-5)
+					font-size: 23px
+
+				+breakpoint($smartphone-mas2)
+					font-size: 20px
+
 
 
 

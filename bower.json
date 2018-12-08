@@ -21,6 +21,7 @@
     "sass-flex-mixin": "^1.0.3",
     "breakpoint": "^4.6.4",
     "breakpoint-sass": "^2.7.1",
-    "flexbox": "*"
+    "flexbox": "*",
+    "wow": "wow.js#^1.1.2"
   }
 }

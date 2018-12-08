@@ -1,2 +1,204 @@
 @import molecules/mixins
 
+
+//=====Controle de Resoluçoes=======
+.normal
+	display: block !important
+
+	+breakpoint($desktop-med3)
+		display: none !important
+
+.responsive-1
+	display: none !important
+
+	+breakpoint($desktop-med3)
+		display: block !important
+
+.info
+	padding: 10px !important
+
+//======Resolução Normal=============
+article
+
+	ul
+		margin-top: 10px !important 
+
+		li
+			+flexbox
+
+
+			.bullet 
+				width: 20px
+				height: 20px 
+				background: $branco
+				border-radius: 5px
+
+			p 
+				margin-left: 10px !important 
+
+
+	p 
+		font-family: Open Sans
+		color: $branco
+		font-size: 18px 
+		text-align: justify
+
+		+breakpoint($desktop3)
+			font-size: 16px
+
+	h2
+		font-family: Hero 
+		color: $branco 
+		font-size: 20px 
+		text-transform: uppercase
+		margin-top: 10px !important 
+
+		+breakpoint($desktop3)
+			font-size: 18px
+
+form 
+	+flexbox 
+	flex-direction: column
+
+	input 
+		width: 100%
+		height: 35px
+		border: 2px solid $preto-italico
+		font-family: Open Sans 
+		font-size: 18px 
+		color: $preto-italico 
+		padding: 5px !important 
+		+placeholder($preto-italico)
+		+transition(.5s)
+		outline: none
+		border-radius: 12px
+		margin-top: 10px !important
+
+		+breakpoint($desktop-med2)
+			height: 28px
+
+		&:hover 
+			border: 2px solid $laranja
+			outline: none
+
+		&:focus
+			border: 2px solid $laranja
+			outline: none
+
+	button
+		width: 100%
+		height: 40px
+		border: none 
+		outline: none 
+		background: $laranja 
+		font-family: Hero
+		font-size: 20px
+		color: $branco
+		text-transform: uppercase 
+		cursor: pointer 
+		+transition(.5s)
+		border-radius: 12px
+		margin-top: 20px !important
+
+		+breakpoint($desktop-med2)
+			height: 30px
+			margin-top: 15px !important
+
+		&:hover
+			background: $verde 
+
+		&:focus 
+			outline: none
+
+//======Resolução Responsiva=============
+.respdesc
+
+	padding: 20px !important
+
+	+breakpoint($smartphone-mas2)
+		padding: 10px !important
+
+.align 
+
+	+breakpoint($smartphone-landscape-s2s)
+		//display: none
+		+flexbox 
+		justify-content: center
+
+
+
+article
+	
+	p 
+		+breakpoint($desktop-med3)
+			font-size: 28px
+
+		+breakpoint($smartphone-landscape-s2s)
+			text-align: center
+
+		+breakpoint($smartphone-landscape-ms2)
+			font-size: 25px
+
+		+breakpoint($smartphone-mas2)
+			font-size: 23px
+
+
+
+	h2 
+		+breakpoint($desktop-med3)
+			font-size: 30px
+
+		+breakpoint($smartphone-landscape-s2s)
+			text-align: center
+
+		+breakpoint($smartphone-landscape-ms2)
+			font-size: 28px
+
+		+breakpoint($smartphone-mas2)
+			font-size: 25px
+
+	ul 
+
+		li
+
+			.bullet-resp 
+				width: 30px
+				height: 30px 
+				background: $branco
+				border-radius: 5px
+
+				+breakpoint($smartphone-landscape-ms2)
+					width: 25px
+					height: 25px
+
+				+breakpoint($smartphone-mas2)
+					width: 20px
+					height: 20px
+			
+		
+
+			p 
+				margin-left: 10px !important
+
+				+breakpoint($desktop-med3)
+					margin-top: -8px !important
+
+			
+
+			+breakpoint($desktop-med3)
+				margin-top: 10px !important
+
+
+form 
+
+	input
+		+breakpoint($desktop-med3)
+			height: 40px
+
+	button
+		+breakpoint($desktop-med3)
+			height: 50px
+
+
+
+
